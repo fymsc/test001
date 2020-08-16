@@ -27,7 +27,7 @@ jobs:
     - name: set env
       id: admin
       run: |
-        release_tag="FriendlyWrt-FYMSC_NanoPi-R2S-$(date +%Y-%m-%d-%H-%M-%s)"
+        release_tag="FriendlyWrt-FYMSC_NanoPi-R2S-$(date +%Y-%m-%d-%H:%M:)"
         release_tim="time-$(time +%h-%m-%s)"
         echo "##[set-output name=release_tag;]$release_tag"
         # 引用变量
